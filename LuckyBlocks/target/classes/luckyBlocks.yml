@@ -1,0 +1,62 @@
+messages:
+  open_lucky_block_cooldown: 'Wait {seconds} more seconds before opening another lucky block!'
+  sm1_destroyed_your_block: 'Someone destroyed your luckyblock!'
+  destroyed_sm1_block: 'You have destroyed {owner} lucky block!'
+help:
+  - '&1Here are'
+  - '&2some lines '
+  - '&3displayed after '
+  - '&4using help command '
+
+luckyblocks:
+  Normal:
+    item:
+      material: 'SKULL_ITEM'
+      texture: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTE5ZDI4YTg2MzJmYTRkODdjYTE5OWJiYzJlODhjZjM2OGRlZGQ1NTc0NzAxN2FlMzQ4NDM1NjlmN2E2MzRjNSJ9fX0'
+      name: '&e&lLucky &6&lBlock'
+      lore:
+        - '&7Place and break to receive &frewards&7!'
+      particle_type: 'BLOCK_CRACK'
+      particle_block_type: 'SOUL_SAND'
+      particle_amount: 40
+    items:
+      '1':
+        chance: 25
+        material: WOOL #This is the material used in the animation
+        data: 1 #This is data
+        name: '&e&lTreasure &6&lKeys' #This is the name used for the animation
+        message: '&6&l[!] &eYou won 3 Treasure Keys!'  #This message is sent when this reward is won.
+        commands:
+          - teleport {player} 30 100 30
+      '2':
+        chance: 75
+        material: RED_ROSE #This is the material used in the animation
+        name: '&e&lSpring &d&lKeys' #This is the name used for the animation
+        message: '&6&l[!] &eYou won the 1 Spring Key!'  #This message is sent when this reward is won.
+        commands:
+          - teleport {player} 40 100 40
+  Super:
+    item:
+      material: 'SKULL_ITEM'
+      texture: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWJhMDlkZDRiMTU2ZjRjZTJlODk3ZjRjMzZhYmRiZDQ2YTk1OTNhNjE4NDU4NjE2ZThkYTM5YTEwYTg1M2Y2In19fQ=='
+      name: '&f&lSuper &e&lLucky &6&lBlock'
+      lore:
+        - '&7Place and break to receive &frewards&7!'
+      particle_type: 'BLOCK_CRACK'
+      particle_block_type: 'SOUL_SAND'
+      particle_amount: 40
+    items:
+      '1':
+        chance: 40
+        material: PRISMARINE_CRYSTALS #This is the material used in the animation
+        name: '&6&lGold Rank' #This is the name used for the animation
+        message: '&6&l[!] &eYou won the Gold Rank!'  #This message is sent when this reward is won.
+        commands:
+          - teleport {player} 50 100 50
+      '2':
+        chance: 60
+        material: PAPER #This is the material used in the animation
+        name: '&d&l$100,000' #This is the name used for the animation
+        message: '&6&l[!] &eYou won the $100,000!'  #This message is sent when this reward is won.
+        commands:
+          - teleport {player} 60 100 60

@@ -1,0 +1,15 @@
+name: LuckyBlocks
+version: ${project.version}
+main: me.muchomore.LuckyBlocks
+prefix: [ LuckyBlocks ]
+authors: [ Muchomore ]
+description: Lucky blocks plugin
+website: https://www.mc-market.org/threads/674601/
+
+permissions:
+  luckyblock:
+    admin:
+      commands
+
+commands:
+  luckyblocks:
